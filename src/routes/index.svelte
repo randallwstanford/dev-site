@@ -1,2 +1,14 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+  import { Router, Route } from 'svelte-routing';
+  import Home from '../components/Home/Home.svelte';
+  import About from '../components/About/About.svelte';
+
+  export let url = '';
+</script>
+
+<Router {url}>
+  <div>
+    <Route path="about" component={About} />
+    <Route path="/" component={Home} />
+  </div>
+</Router>
