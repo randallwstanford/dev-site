@@ -14,7 +14,7 @@
     margin: 0 auto;
     margin-top: 3.5rem;
     width: 70rem;
-    height: 45rem;
+    height: 50rem;
     display: flex;
     flex-direction: column;
   }

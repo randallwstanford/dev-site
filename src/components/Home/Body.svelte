@@ -1,5 +1,5 @@
 <script>
-
+  import Projects from "./Projects.svelte";
 </script>
 
 <style>
@@ -7,6 +7,7 @@
     margin-top: 3rem;
     font-family: 'Comfortaa', cursive;
     height: 50rem;
+    width: 150rem;
     background-color: var(--eton-blue);
   }
   .content {
@@ -15,5 +16,7 @@
 </style>
 
 <div class="body">
-  <div class="content">THIS IS THE BODY this is the body</div>
+  <div class="content">
+    <Projects />
+  </div>
 </div>
