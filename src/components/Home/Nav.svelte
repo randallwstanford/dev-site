@@ -5,38 +5,38 @@
 <nav>
   <span class="logo">randy</span>
   <span class="nav">
-    <a class="social" href="https://github.com/randallwstanford">github</a>
-    <a class="social" href="">about me</a>
-    <Link to="about">about me</Link>
-    <a class="social" href="https://www.linkedin.com/in/randallstanford/">linkedin</a>
+    <a href="https://github.com/randallwstanford">github</a>
+    <a href="https://www.linkedin.com/in/randallstanford/">linkedin</a>
+    <Link to="/about">about me</Link>
   </span>
 </nav>
 
 <style>
+  /* All <a> tags  */
+  :global(a) {
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-right: 5rem;
+    color: black;
+    font-size: 1.75rem;
+  }
+  :global(a):hover {
+    display: inline-block;
+    animation: shakeX; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: .75s; /* don't forget to set a duration! */
+  }
   .nav {
-    background-color: var(--eton-blue);
     float: right;
     width: 90%;
-    height: 150%;
+    height: 200%;
     justify-content: flex-end;
     font-family: 'Comfortaa', cursive;
     display: flex; /* or inline-flex */;
   }
-  .social {
-    font-size: 1.5rem;
-    height: 100%;
-    margin-right: 5rem;
-    margin-top: 1rem;
-    text-decoration: none;
-    color: black;
-  }
-  .social:hover {
-    display: inline-block;
-    animation: bounce; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: .75s; /* don't forget to set a duration! */
-  }
+
   .logo {
     font-size: 1.75rem;
+    margin-left: 1rem;
     font-family: 'Comfortaa', cursive;
   }
 </style>
