@@ -1,5 +1,4 @@
 <script>
-  import { Router, Link, Route } from "svelte-routing";
   import Nav from "./Nav.svelte";
 	import Body from "./Body.svelte";
 </script>
