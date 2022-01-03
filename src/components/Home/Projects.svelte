@@ -6,7 +6,6 @@ var projects = [
   ];
 </script>
 
-
 {#each projects as project}
   <div class="project">
     <div class="title">{project.name}</div>
