@@ -21,7 +21,7 @@
     font-size: 1.5rem;
     margin-right: 5rem;
     margin-top: 2.5rem;
-    color: black;
+    color: #dadada;
     font-size: 2rem;
   }
   :global(a):hover {
@@ -48,18 +48,17 @@
   .logo h2{
     margin-top: 3.5rem;
     color: #fff;
-    font-size: 3.5em;
+    font-size: 2.75em;
     position: absolute;
     transform: translate(-50%, -50%);
   }
 
   .logo h2:nth-child(1) {
-    color: black;
-    -webkit-text-stroke: 2px #000000;
+    color: #808080;
+    -webkit-text-stroke: 2px #808080;
   }
 
   .logo h2:nth-child(2) {
-    /* color: #000000; */
     animation: animate 4s ease-in-out infinite;
   }
 

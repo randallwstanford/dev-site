@@ -21,7 +21,8 @@ var projects = [
 <style>
   .project {
     float: left;
-    margin-right: 5rem;
+    margin-left: 5rem;
+    margin-right: 7.5rem;
     height: 40rem;
     width: 30rem;
   }
