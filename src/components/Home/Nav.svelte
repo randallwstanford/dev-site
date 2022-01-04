@@ -54,8 +54,8 @@
   }
 
   .logo h2:nth-child(1) {
-    color: #808080;
-    -webkit-text-stroke: 2px #808080;
+    color: #8e93a3;
+    -webkit-text-stroke: 2px #8e93a3;
   }
 
   .logo h2:nth-child(2) {
