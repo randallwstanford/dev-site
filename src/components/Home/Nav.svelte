@@ -3,7 +3,10 @@
 </script>
 
 <nav>
-  <span class="logo">randy</span>
+  <div class="logo">
+    <h2>randy</h2>
+    <h2>randy</h2>
+  </div>
   <span class="nav">
     <a href="https://github.com/randallwstanford">github</a>
     <a href="https://www.linkedin.com/in/randallstanford/">linkedin</a>
@@ -17,8 +20,9 @@
     text-decoration: none;
     font-size: 1.5rem;
     margin-right: 5rem;
+    margin-top: 2.5rem;
     color: black;
-    font-size: 1.75rem;
+    font-size: 2rem;
   }
   :global(a):hover {
     display: inline-block;
@@ -35,8 +39,57 @@
   }
 
   .logo {
-    font-size: 1.75rem;
-    margin-left: 1rem;
+    font-size: 2rem;
+    margin-left: 15rem;
     font-family: 'Comfortaa', cursive;
+    position: relative;
+  }
+
+  .logo h2{
+    margin-top: 3.5rem;
+    color: #fff;
+    font-size: 3.5em;
+    position: absolute;
+    transform: translate(-50%, -50%);
+  }
+
+  .logo h2:nth-child(1) {
+    color: black;
+    -webkit-text-stroke: 2px #000000;
+  }
+
+  .logo h2:nth-child(2) {
+    /* color: #000000; */
+    animation: animate 4s ease-in-out infinite;
+  }
+
+  @keyframes animate {
+    0%,
+    100% {
+      clip-path: polygon(
+        0% 45%,
+        16% 44%,
+        33% 50%,
+        54% 60%,
+        70% 61%,
+        84% 59%,
+        100% 52%,
+        100% 100000000%,
+        0% 400%
+      );
+    }
+    50% {
+      clip-path: polygon(
+        0% 60%,
+        15% 65%,
+        34% 66%,
+        51% 62%,
+        67% 50%,
+        84% 45%,
+        100% 46%,
+        100% 100%,
+        0% 100%
+      );
+    }
   }
 </style>
