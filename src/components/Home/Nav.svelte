@@ -11,6 +11,7 @@
     <a href="https://github.com/randallwstanford">github</a>
     <a href="https://www.linkedin.com/in/randallstanford/">linkedin</a>
     <Link to="/about">about me</Link>
+    <Link to="/contact">contact me</Link>
   </span>
 </nav>
 
@@ -33,6 +34,7 @@
     float: right;
     width: 90%;
     height: 200%;
+    margin-right: 1.5rem;
     justify-content: flex-end;
     font-family: 'Comfortaa', cursive;
     display: flex; /* or inline-flex */;
