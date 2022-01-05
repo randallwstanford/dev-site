@@ -38,7 +38,18 @@
   }
   img {
     margin-top: 1rem;
-    width: 100%;
+    width: 150%;
+    transform: translate(-16%);
+  }
+  @media only screen and (max-width: 1024px) {
+    .project {
+      height: 55rem;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .project {
+      height: 47.5rem;
+    }
   }
 </style>
 
