@@ -8,16 +8,26 @@
     ];
 </script>
 
-{#each projects as project}
+<div>
+  <h1 class="project-title">Projects</h1>
+  {#each projects as project}
   <div class="project">
     <div class="title">{project.name}</div>
     <div class="description">{project.description}</div>
     {#if project.img} <img src={project.img} alt=""/>
     {:else}<Loading />{/if}
   </div>
-{/each}
+  {/each}
+</div>
 
 <style>
+  .project-title {
+    margin: 0 auto;
+    text-align: center;
+    width: 25rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid black;
+  }
   .project {
     margin: 0 auto;
     height: 35rem;
@@ -38,8 +48,7 @@
   }
   img {
     margin-top: 1rem;
-    width: 150%;
-    transform: translate(-16%);
+    width: 100%;
   }
   @media only screen and (max-width: 1024px) {
     .project {
