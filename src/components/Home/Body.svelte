@@ -8,6 +8,8 @@
   </div>
 </div>
 
+<!-- <a href="https://www.google.com"><img alt="" src="/static/cat.png" width="100" height="70"></a> -->
+
 <style>
   :root {
     --light: #A1A6B4;
@@ -38,10 +40,31 @@
     width: 80rem;
     background-color: var(--light);
     overflow: auto;
+    /* overflow-x: hidden; */
     scrollbar-width: var(--scrollbarWidth);
     scrollbar-color: var(--scrollbarThumb) var(--scrollbarBg);
   }
   .content {
     margin: 2rem;
+  }
+  @media only screen and (max-width: 1024px) {
+    .body {
+      height: 65rem;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .body {
+      height: 90rem;
+    }
+  }
+  @media only screen and (max-width: 425px) {
+    .body {
+      height: 100%;
+    }
+  }
+  @media only screen and (max-width: 320px) {
+    .body {
+      width: 90%;
+    }
   }
 </style>
