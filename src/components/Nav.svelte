@@ -1,23 +1,25 @@
 <script>
-  import { Router, Link, Route } from "svelte-routing";
+  import { Link } from "svelte-routing";
 </script>
 
 <nav>
   <div class="logo">
-    <h2>randy</h2>
-    <h2>randy</h2>
+    <Link to="/">
+      <h2>randy</h2>
+      <h2>randy</h2>
+    </Link>
   </div>
   <span class="nav">
-    <a href="https://github.com/randallwstanford">github</a>
-    <a href="https://www.linkedin.com/in/randallstanford/">linkedin</a>
-    <Link to="/about">about me</Link>
-    <Link to="/contact">contact me</Link>
+    <Link class="nav-link" to="/about">about me</Link>
+    <Link class="nav-link" to="/contact">contact me</Link>
+    <a class="nav-link" href="https://www.linkedin.com/in/randallstanford/">linkedin</a>
+    <a class="nav-link" href="https://github.com/randallwstanford">github</a>
   </span>
 </nav>
 
 <style>
   /* All <a> tags  */
-  :global(a) {
+  :global(a.nav-link){
     text-decoration: none;
     font-size: 1.5rem;
     margin-right: 5rem;
@@ -25,7 +27,7 @@
     color: #dadada;
     font-size: 2rem;
   }
-  :global(a):hover {
+  :global(a.nav-link):hover{
     display: inline-block;
     animation: shakeX; /* referring directly to the animation's @keyframe declaration */
     animation-duration: .75s; /* don't forget to set a duration! */
@@ -39,14 +41,12 @@
     font-family: 'Comfortaa', cursive;
     display: flex; /* or inline-flex */;
   }
-
   .logo {
     font-size: 2rem;
     margin-left: 15rem;
     font-family: 'Comfortaa', cursive;
     position: relative;
   }
-
   .logo h2{
     margin-top: 3.5rem;
     color: #fff;
@@ -57,7 +57,6 @@
 
   .logo h2:nth-child(1) {
     color: #8e93a3;
-    -webkit-text-stroke: 2px #8e93a3;
   }
 
   .logo h2:nth-child(2) {
