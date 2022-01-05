@@ -45,13 +45,13 @@
     margin: 0 auto;
     margin-top: 3rem;
     font-family: 'Comfortaa', cursive;
-    height: 50rem;
+    height: 40rem;
     width: 80rem;
     background-color: #A1A6B4;
     overflow: auto;
     overflow-x: hidden;
   }
-  /* @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: 1024px) {
     .body {
       height: 65rem;
     }
@@ -70,5 +70,5 @@
     .body {
       width: 90%;
     }
-  } */
+  }
 </style>

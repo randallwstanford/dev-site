@@ -36,7 +36,7 @@
     margin: 0 auto;
     margin-top: 3rem;
     font-family: 'Comfortaa', cursive;
-    height: 50rem;
+    height: 40rem;
     width: 80rem;
     background-color: var(--light);
     overflow: auto;

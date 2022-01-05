@@ -18,7 +18,6 @@
 </nav>
 
 <style>
-  /* All <a> tags  */
   :global(a.nav-link){
     text-decoration: none;
     font-size: 1.5rem;
