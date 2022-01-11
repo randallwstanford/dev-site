@@ -2717,7 +2717,7 @@ var app = (function () {
     			if (!src_url_equal(img.src, img_src_value = /*project*/ ctx[1].img)) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "");
     			attr_dev(img, "class", "svelte-179fmc5");
-    			add_location(img, file$5, 16, 22, 809);
+    			add_location(img, file$5, 16, 22, 810);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, img, anchor);
@@ -2779,11 +2779,11 @@ var app = (function () {
     			if_block.c();
     			t4 = space();
     			attr_dev(div0, "class", "title svelte-179fmc5");
-    			add_location(div0, file$5, 14, 4, 690);
+    			add_location(div0, file$5, 14, 4, 691);
     			attr_dev(div1, "class", "description svelte-179fmc5");
-    			add_location(div1, file$5, 15, 4, 734);
+    			add_location(div1, file$5, 15, 4, 735);
     			attr_dev(div2, "class", "project svelte-179fmc5");
-    			add_location(div2, file$5, 13, 2, 664);
+    			add_location(div2, file$5, 13, 2, 665);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div2, anchor);
@@ -2847,7 +2847,7 @@ var app = (function () {
     		c: function create() {
     			div = element("div");
     			h1 = element("h1");
-    			h1.textContent = "Projects";
+    			h1.textContent = "asdasdasd";
     			t1 = space();
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
