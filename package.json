@@ -32,6 +32,7 @@
   "type": "module",
   "dependencies": {
     "animate.css": "^4.1.1",
+    "mailslurp-client": "^15.2.0",
     "svelte-routing": "^1.6.0"
   }
 }
