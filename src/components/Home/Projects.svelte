@@ -9,7 +9,7 @@
 </script>
 
 <div>
-  <h1 class="project-title">Projects</h1>
+  <h1 class="project-title">asddsds</h1>
   {#each projects as project}
   <div class="project">
     <div class="title">{project.name}</div>
