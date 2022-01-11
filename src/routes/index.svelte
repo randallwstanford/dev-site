@@ -7,9 +7,7 @@
 </script>
 
 <Router {url}>
-  <div class="app">
-    <Route path="about" component={About} />
-    <Route path="contact" component={Contact} />
-    <Route path="/" component={Home} />
-  </div>
+  <Route path="about" component={About} />
+  <Route path="contact" component={Contact} />
+  <Route path="/" component={Home} />
 </Router>
