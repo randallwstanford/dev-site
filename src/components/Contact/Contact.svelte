@@ -1,5 +1,18 @@
 <script>
   import Nav from '../Nav.svelte';
+
+  var name = "";
+  var email = "";
+  var subject = "";
+  var message = "";
+
+  var handleSubmit = (e) => {
+    e.preventDefault();
+    var data = { name, email, subject, message }
+    console.log(data)
+  };
+
+
 </script>
 
 <div id="container">
@@ -9,10 +22,13 @@
       <h1>Contact Me</h1>
       <div class="form">
         <form>
-          <input type="text" placeholder="Name" class="contact" />
-          <input type="text" placeholder="Email" class="contact" />
-          <input type="text" placeholder="Subject" class="contact" />
-          <textarea  placeholder="Message" class="contact" />
+          <input type="text" bind:value={name} placeholder="Name" class="contact" />
+          <input type="email" bind:value={email} placeholder="Email" class="contact" />
+          <input type="text" bind:value={subject} placeholder="Subject" class="contact" />
+          <textarea  placeholder="Message" bind:value={message} class="contact" />
+          <div class="button">
+            <button type="submit" on:click={handleSubmit}>Submit</button>
+          </div>
         </form>
       </div>
     </div>
@@ -60,24 +76,20 @@
     overflow: auto;
     overflow-x: hidden;
   }
-  /* @media only screen and (max-width: 1024px) {
-    .body {
-      height: 65rem;
-    }
+  .button {
+    text-align: center;
   }
-  @media only screen and (max-width: 768px) {
-    .body {
-      height: 90rem;
-    }
+  button {
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    padding: 13px 20px 13px;
+    outline: 0;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
   }
-  @media only screen and (max-width: 425px) {
-    .body {
-      height: 100%;
-    }
-  }
-  @media only screen and (max-width: 320px) {
-    .body {
-      width: 90%;
-    }
-  } */
 </style>
