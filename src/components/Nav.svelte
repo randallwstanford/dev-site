@@ -12,8 +12,8 @@
   <span class="nav">
     <Link class="nav-link" to="/about">about me</Link>
     <Link class="nav-link" to="/contact">contact me</Link>
-    <a class="nav-link" href="https://www.linkedin.com/in/randallstanford/">linkedin</a>
-    <a class="nav-link" href="https://github.com/randallwstanford">github</a>
+    <a class="nav-link" target="_blank" href="https://www.linkedin.com/in/randallstanford/">linkedin</a>
+    <a class="nav-link" target="_blank" href="https://github.com/randallwstanford">github</a>
   </span>
 </nav>
 
