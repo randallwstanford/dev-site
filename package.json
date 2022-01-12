@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "build": "rollup -c",
-    "dev": "rollup -c -w",
-    "start": "sirv public --single",
-    "public": "sirv public -s"
+    "dev": "HOST=0.0.0.0 rollup -c -w",
+    "start": "sirv public",
+    "public": "sirv public"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^17.0.0",
