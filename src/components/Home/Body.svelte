@@ -40,7 +40,6 @@
     width: 80rem;
     background-color: var(--light);
     overflow: auto;
-    /* overflow-x: hidden; */
     scrollbar-width: var(--scrollbarWidth);
     scrollbar-color: var(--scrollbarThumb) var(--scrollbarBg);
   }
