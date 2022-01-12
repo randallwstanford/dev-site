@@ -9,7 +9,7 @@
       <h1>Contact Me</h1>
       <div class="form">
         <form action="https://formsubmit.co/randallwstanford@gmail.com" method="POST">
-          <input name="name" type="text" placeholder="Nasssme" class="contact" required />
+          <input name="name" type="text" placeholder="Name" class="contact" required />
           <input name="email" type="email" placeholder="Email" class="contact" required />
           <input name="_subjectw" type="text" placeholder="Subject" class="contact" />
           <textarea  placeholder="Message" class="contact" required />
