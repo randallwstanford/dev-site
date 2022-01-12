@@ -1,7 +1,6 @@
 <script>
   import Nav from "../Nav.svelte";
 	import Body from "./Body.svelte";
-  import Thanks from "../Thanks/Thanks.svelte"
 </script>
 
 <div id="container">
