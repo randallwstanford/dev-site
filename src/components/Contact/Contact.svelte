@@ -1,18 +1,5 @@
 <script>
   import Nav from '../Nav.svelte';
-
-  var name = "";
-  var email = "";
-  var subject = "";
-  var message = "";
-
-  var handleSubmit = (e) => {
-    e.preventDefault();
-    var data = { name, email, subject, message }
-    console.log(data)
-  };
-
-
 </script>
 
 <div id="container">
@@ -21,14 +8,12 @@
     <div class="content">
       <h1>Contact Me</h1>
       <div class="form">
-        <form>
-          <input type="text" action="https://formsubmit.co/randallwstanford@gmail.com" method="POST" placeholder="Name" class="contact" required />
-          <input type="email" placeholder="Email" class="contact" required />
-          <input type="text" placeholder="Subject" class="contact" />
-          <textarea  placeholder="Message" bind:value={message} class="contact" required />
-          <div class="button">
-            <button type="submit">Submit</button>
-          </div>
+        <form action="https://formsubmit.co/randallwstanford@gmail.com" method="POST">
+          <input name="name" type="text" placeholder="Nasssme" class="contact" required />
+          <input name="email" type="email" placeholder="Email" class="contact" required />
+          <input name="_subjectw" type="text" placeholder="Subject" class="contact" />
+          <textarea  placeholder="Message" class="contact" required />
+          <div class="button"><button type="submit">Submit</button></div>
         </form>
       </div>
     </div>
