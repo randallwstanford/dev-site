@@ -22,12 +22,12 @@
       <h1>Contact Me</h1>
       <div class="form">
         <form>
-          <input type="text" bind:value={name} placeholder="Name" class="contact" />
-          <input type="email" bind:value={email} placeholder="Email" class="contact" />
-          <input type="text" bind:value={subject} placeholder="Subject" class="contact" />
-          <textarea  placeholder="Message" bind:value={message} class="contact" />
+          <input type="text" action="https://formsubmit.co/randallwstanford@gmail.com" method="POST" placeholder="Name" class="contact" required />
+          <input type="email" placeholder="Email" class="contact" required />
+          <input type="text" placeholder="Subject" class="contact" />
+          <textarea  placeholder="Message" bind:value={message} class="contact" required />
           <div class="button">
-            <button type="submit" on:click={handleSubmit}>Submit</button>
+            <button type="submit">Submit</button>
           </div>
         </form>
       </div>
