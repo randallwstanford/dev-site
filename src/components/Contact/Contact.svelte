@@ -13,6 +13,7 @@
           <input name="email" type="email" placeholder="Email" class="contact" required />
           <input name="_subjectw" type="text" placeholder="Subject" class="contact" />
           <textarea  placeholder="Message" class="contact" required />
+          <input type="hidden" name="_next" value="https://randy-dev.netlify/thanks">
           <div class="button"><button type="submit">Submit</button></div>
         </form>
       </div>
