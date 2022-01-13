@@ -6,7 +6,7 @@
     "build": "rollup -c",
     "dev": "HOST=0.0.0.0 rollup -c -w",
     "start": "sirv public",
-    "public": "sirv public"
+    "public": "HOST=0.0.0.0 sirv public -s"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^17.0.0",
