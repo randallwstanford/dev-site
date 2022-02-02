@@ -3,7 +3,7 @@
 
   var projects = [
       {name: 'Bike Trails', img: "https://user-images.githubusercontent.com/83252804/152218263-93d6f53b-b9df-43b3-ad73-9c144fe262d3.png", description: "Single page application that finds bike trails and friendly bike roads using React, Google Maps API, and react-google-maps/api library."},
-      {name: 'Cocktail Builder', img: "https://user-images.githubusercontent.com/83252804/138566931-80b8c442-3cc7-4ac1-8ee0-0b4424aa7d54.png", description: "Single page application that shows you what cocktails you are able to build with the product you have on hand."},
+      {name: 'Cocktail Builder', img: "https://user-images.githubusercontent.com/83252804/152252511-225f13a4-de3d-4d43-8dcb-6ca5b263cd0c.png", description: "Single page application that shows you what cocktails you are able to build with the product you have on hand."},
       {name: 'Huntr', img: "https://user-images.githubusercontent.com/83252804/146260695-79c508bf-f886-445a-8410-78d47f6b68aa.png", description: "Ride share application MVP built in one week featuring Google Maps API, userdashboard, messaging, and authentication."}
     ];
 </script>
