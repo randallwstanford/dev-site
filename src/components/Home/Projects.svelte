@@ -24,15 +24,16 @@
     margin: 0 auto;
     text-align: center;
     width: 25rem;
+    font-size: 3rem;
     padding-bottom: 1rem;
     border-bottom: 2px solid black;
   }
   .project {
     margin: 0 auto;
-    height: 35rem;
-    width: 50rem;
+    height: 40rem;
+    width: 100%;
     display: block;
-    padding-bottom: 1rem;
+    padding-bottom: 15%;
     border-bottom: .1rem solid black;
   }
   .title {
@@ -48,16 +49,6 @@
   img {
     margin-top: 1rem;
     width: 100%;
-  }
-  @media only screen and (max-width: 1024px) {
-    .project {
-      height: 55rem;
-    }
-  }
-  @media only screen and (max-width: 768px) {
-    .project {
-      height: 47.5rem;
-    }
   }
 </style>
 

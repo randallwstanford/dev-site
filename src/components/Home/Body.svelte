@@ -8,19 +8,25 @@
   </div>
 </div>
 
-<!-- <a href="https://www.google.com"><img alt="" src="/static/cat.png" width="100" height="70"></a> -->
-
 <style>
   :root {
     --light: #A1A6B4;
-    --scrollbarWidth: 14px;
+    --scrollbarWidth: 1rem;
     --scrollbarBg: rgb(0, 0, 0);
     --scrollbarThumb: var(--light);
   }
   .body {
-    scrollbar-width: var(--scrollbarWidth);
     scrollbar-color: var(--scrollbarThumb) var(--scrollbarBg);
+    scrollbar-width: var(--scrollbarWidth);
+    background-color: var(--light);
+    font-family: 'Comfortaa', cursive;
+    margin: 0 auto;
+    height: 50rem;
+    margin-top: 3rem;
+    width: 90%;
+    overflow: auto;
   }
+
   .body::-webkit-scrollbar {
     width: var(--scrollbarWidth);
   }
@@ -32,38 +38,19 @@
     border-radius: 6px;
     border: 3px solid var(--scrollbarBg);
   }
-  .body{
-    margin: 0 auto;
-    margin-top: 3rem;
-    font-family: 'Comfortaa', cursive;
-    height: 40rem;
-    width: 80rem;
-    background-color: var(--light);
-    overflow: auto;
-    scrollbar-width: var(--scrollbarWidth);
-    scrollbar-color: var(--scrollbarThumb) var(--scrollbarBg);
-  }
   .content {
     margin: 2rem;
   }
-  @media only screen and (max-width: 1024px) {
+
+  @media only screen and (max-width: 1079px) {
     .body {
-      height: 65rem;
+      height: 10rem;
     }
   }
-  @media only screen and (max-width: 768px) {
+
+  /* @media only screen and (max-width: 1080px) {
     .body {
-      height: 90rem;
+      height: 30rem;
     }
-  }
-  @media only screen and (max-width: 425px) {
-    .body {
-      height: 100%;
-    }
-  }
-  @media only screen and (max-width: 320px) {
-    .body {
-      width: 90%;
-    }
-  }
+  } */
 </style>

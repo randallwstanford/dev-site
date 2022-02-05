@@ -1,6 +1,7 @@
 <script>
   import Nav from "../Nav.svelte";
 	import Body from "./Body.svelte";
+  export let location;
 </script>
 
 <div id="container">
@@ -10,11 +11,9 @@
 
 <style>
   #container {
-    --eton-blue: #93C0A4;
     overflow: hidden;
     margin: 0 auto;
-    width: 90rem;
-    height: 150rem;
+    width: 90%;
     display: flex;
     flex-direction: column;
   }
