@@ -20,16 +20,16 @@
 <style>
   :global(a.nav-link){
     text-decoration: none;
-    font-size: 1.5rem;
     margin-right: 5rem;
     margin-top: 2.5rem;
     color: #dadada;
     font-size: 2rem;
   }
+
   :global(a.nav-link):hover{
     display: inline-block;
-    animation: shakeX; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: .75s; /* don't forget to set a duration! */
+    animation: shakeX;
+    animation-duration: .75s;
   }
   .nav {
     float: right;
@@ -38,17 +38,20 @@
     margin-right: 1.5rem;
     justify-content: flex-end;
     font-family: 'Comfortaa', cursive;
-    display: flex; /* or inline-flex */;
+    display: flex;
+    font-size: 1rem;
   }
+
   .logo {
     font-size: 2rem;
     margin-left: 15rem;
     font-family: 'Comfortaa', cursive;
     position: relative;
   }
+
   .logo h2{
     margin-top: 3.5rem;
-    color: #fff;
+    color: rgb(255, 255, 255);
     font-size: 2.75em;
     position: absolute;
     transform: translate(-50%, -50%);
@@ -91,4 +94,69 @@
       );
     }
   }
+@media only screen and (max-width: 1500px) {
+  :global(a.nav-link) {
+    margin-right: 4rem;
+  }
+}
+@media only screen and (max-width: 1430px) {
+  :global(a.nav-link) {
+    margin-right: 3rem;
+  }
+}
+@media only screen and (max-width: 1340px) {
+  :global(a.nav-link) {
+    margin-right: 2.5rem;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .nav {
+    margin-top: 12.5%;
+  }
+  :global(a.nav-link) {
+    margin: 0 auto;
+  }
+  .logo {
+    margin: 0 auto;
+    width: 0%;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .nav {
+    margin-top: 13%;
+  }
+}
+
+@media only screen and (max-width: 975px) {
+  .nav {
+    margin-top: 15%;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .nav {
+    margin-top: 17%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .nav {
+    width: 100%;
+    margin-right: 0;
+  }
+  :global(a.nav-link){
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .nav {
+    border: 1px solid green;
+    height: 250px;
+  }
+  :global(a.nav-link){
+    height: 25%;
+  }
+}
+
 </style>

@@ -16,8 +16,7 @@
   #container {
     overflow: hidden;
     margin: 0 auto;
-    width: 90rem;
-    height: 150rem;
+    width: 80%;
     display: flex;
     flex-direction: column;
   }
