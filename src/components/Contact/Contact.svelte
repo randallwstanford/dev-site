@@ -1,81 +1,19 @@
 <script>
-  import Nav from '../Nav.svelte';
+  import Nav from "../Nav.svelte";
+	import Body from "./Body.svelte";
 </script>
 
 <div id="container">
   <Nav />
-  <div class="body">
-    <div class="content">
-      <h1>Contact Me</h1>
-      <div class="form">
-        <form action="https://formsubmit.co/randallwstanford@gmail.com" method="POST">
-          <input name="name" type="text" placeholder="Name" class="contact" required />
-          <input name="email" type="email" placeholder="Email" class="contact" required />
-          <input name="_subjectw" type="text" placeholder="Subject" class="contact" />
-          <textarea  placeholder="Message" class="contact" required />
-          <input type="hidden" name="_next" value="https://randy-dev.netlify/thanks">
-          <div class="button"><button type="submit">Submit</button></div>
-        </form>
-      </div>
-    </div>
-  </div>
+  <Body />
 </div>
 
 <style>
   #container {
     overflow: hidden;
     margin: 0 auto;
-    width: 90rem;
-    height: 150rem;
+    width: 90%;
     display: flex;
     flex-direction: column;
-  }
-  h1 {
-    margin-bottom: 2rem;
-  }
-  input, textarea {
-    border: 2px solid #eee;
-    margin: 1rem 25%;
-    padding: 10px;
-  }
-  textarea {
-    height: 10rem;
-  }
-  .form {
-    height: 30rem;
-  }
-  .content {
-    margin: 2rem;
-  }
-  .contact {
-    padding:10px;
-    float: left;
-    width: 50%;
-  }
-  .body{
-    margin: 0 auto;
-    margin-top: 3rem;
-    font-family: 'Comfortaa', cursive;
-    height: 40rem;
-    width: 80rem;
-    background-color: #A1A6B4;
-    overflow: auto;
-    overflow-x: hidden;
-  }
-  .button {
-    text-align: center;
-  }
-  button {
-    font-size: 16px;
-    font-weight: 200;
-    letter-spacing: 1px;
-    padding: 13px 20px 13px;
-    outline: 0;
-    cursor: pointer;
-    position: relative;
-    background-color: rgba(0, 0, 0, 0);
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
   }
 </style>
